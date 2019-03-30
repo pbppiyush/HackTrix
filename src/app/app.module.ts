@@ -1,4 +1,5 @@
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; //@ng-bootstrap/ng-bootstrap
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -16,8 +17,9 @@ import { AppRoutingModule } from '../app/app-routing/app-routing.module';
     DashboardComponent
   ],
   imports: [
-    BrowserModule,
     FormsModule,
+    BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],

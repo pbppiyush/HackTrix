@@ -1,4 +1,4 @@
-<form (submit)="onAddPost(userForm)" #userForm="ngForm" novalidate>
+<form [formGroup]="profileForm" (submit)  ="onSubmit()">
 
   <div id="contact" class="contact">
     <div class="contact-text">
@@ -6,11 +6,11 @@
             <h2>Log In</h2>
             <!-- <input type="text" placeholder="Your First Name..."  ngModel required #fname="ngModel">
             <input type="text" placeholder="Your Last Name..."  ngModel required #lname="ngModel"> -->
-            <input type="text" placeholder="Your Email..." ngModel required #email="ngModel">
-            <input type="password" placeholder="Your Password..." ngModel required #pass="ngModel">
+            <input type="text" placeholder="Your Email..."  formControlName="email">
+            <input type="password" placeholder="Your Password..." formControlName="pass">
             <!-- <input type="text" placeholder="Your Pan Number..." ngModel required #title="ngModel">
-            <input type="text" placeholder="Your Occupation..." ngModel required #title="ngModel"> -->
-            <button type="submit">Submit</button>
+            <input type="text" placeholder="Yo  ur Occupation..." ngModel required #title="ngModel"> -->
+            <button type="submit" [disabled]="!profileForm.valid" >Submit</button>
             <button type="reset">Reset</button>
         </div>
     </div>

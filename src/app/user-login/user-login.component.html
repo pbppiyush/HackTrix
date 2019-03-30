@@ -1,0 +1,18 @@
+<form (submit)="onAddPost(userForm)" #userForm="ngForm" novalidate>
+
+  <div id="contact" class="contact">
+    <div class="contact-text">
+        <div class="contact-items">
+            <h2>Log In</h2>
+            <!-- <input type="text" placeholder="Your First Name..."  ngModel required #fname="ngModel">
+            <input type="text" placeholder="Your Last Name..."  ngModel required #lname="ngModel"> -->
+            <input type="text" placeholder="Your Email..." ngModel required #email="ngModel">
+            <input type="password" placeholder="Your Password..." ngModel required #pass="ngModel">
+            <!-- <input type="text" placeholder="Your Pan Number..." ngModel required #title="ngModel">
+            <input type="text" placeholder="Your Occupation..." ngModel required #title="ngModel"> -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </div>
+  </div>
+  </form>

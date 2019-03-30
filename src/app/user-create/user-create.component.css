@@ -1,0 +1,73 @@
+
+  .contact-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact {
+    padding: 80px 0;
+    position: relative;
+    /* background-image: url("images/contactus.jpg"); */
+    width: 100%;
+    background-size: cover;
+    z-index: 1;
+}
+
+.contact-items h2 {
+    font-size: 35px;
+    margin-bottom: 15px;;
+}
+
+.contact-items input[type="text"], .contact-items input[type="password"] {
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    width: 50%;
+    border: 1px solid rgb(179, 154, 154);
+}
+
+.contact-items textarea {
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    width: 50%;
+    border: 1px solid gray;
+}
+
+.contact-items button {
+    background: coral;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 15px 35px;
+    border-radius: 10px;
+}
+
+
+.contact-items input[type="text"]:focus,
+.contact-items input[type="password"]:focus  {
+    border: 2px solid coral;
+}
+.contact-items textarea:focus {
+    border: 2px solid coral;
+}
+
+#myBtn {
+  margin-left: 20px;
+  margin-right: 30px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: coral;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  z-index: 111;
+}
+
+.contact-items button:hover {
+  background-color: rgb(233, 58, 5);
+}
